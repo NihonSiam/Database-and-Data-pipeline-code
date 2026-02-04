@@ -3,7 +3,7 @@ from counter import Counter
 print("Program starting...")
 print("Initializing counter...")
 
-c = Counter()
+counter = Counter()
 
 print("Counter initialized.")
 
@@ -12,24 +12,24 @@ while True:
     print("1) Add count")
     print("2) Get count")
     print("3) Zero count")
-    print("4) Exit program")
+    print("0) Exit program")
 
     choice = input("Choice: ")
 
     if choice == "1":
-        c.addCount()
+        counter.addCount()
         print("Count increased")
 
     elif choice == "2":
-        print("Current count:", c.getCount())
+        print("Current count:", counter.getCount())
 
     elif choice == "3":
-        c.zeroCount()
+        counter.zeroCount()
         print("Count zeroed")
 
-    elif choice == "4":
+    elif choice == "0":
         print("\nProgram ending.")
         break
 
     else:
-        print("Invalid. Please enter 1, 2, 3, or 4.")
+        print("you have entered wrong input. Please enter 1, 2, 3, or 0.")
